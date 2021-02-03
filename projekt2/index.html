@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Kamenický</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('a[href^="#"]').on('click', function(event) {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').stop().animate({
+                scrollTop: $(hash).offset().top
+            }, 1500, function(){
+                window.location.hash = hash;
+              });
+          });
+        });
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="menu_icon" onclick="openMenu()">
+            <img src="img/menu.png" alt="menu">
+        </div>
+    		<ul class="nav">
+    			<li><a class="link" href="#main_section">About Me</a></li>
+    			<li><a class="link" href="#education_section">Education</a></li>
+    			<li><a class="link" href="#skills_section">Skills</a></li>
+                <li><a class="link" href="#projects_section">Projects</a></li>
+    			<li><a class="link" href="#contact_section">Contact</a></li>
+    		</ul>
+            <script>
+                function openMenu()
+                {
+                    let menu = document.querySelector(".nav");
+                    menu.classList.toggle("TgCls");
+                }
+            </script>
+    </nav>
+
+    <section id="main_section">
+        <h1><a href="http://www.stud.fit.vutbr.cz/~xkamen21/">DANIEL KAMENICKÝ</a></h1>
+        <h3>STUDENT <strong class="strong_red"> | </strong> PROGRAMATOR <strong class="strong_red"> | </strong> ATHLETE</h3>
+        <div class="content">
+            <div class="main_content">
+                <img src="img/itw_profile2.jpg" alt="Smiley face">
+                <h2>About Me</h2>
+                <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et mauris id nibh euismod tincidunt id ac nisi. Nunc aliquam finibus eros, nec varius magna efficitur id. Pellentesque finibus eget justo at facilisis. Phasellus magna purus, ornare sit amet fermentum sed, mollis vitae dolor. Nullam sagittis tortor vel ullamcorper suscipit. Nulla sit amet felis nec sem efficitur maximus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education_section">
+        <div class="content">
+            <h1>Education</h1>
+            <div class="school">
+                <h2>Elementary School</h2>
+                <p>2005<strong class="strong_red"> - </strong>2012</p>
+                <p><a href="http://www.zslastuvkova.cz/">ZŠ Laštůvkova</a></p>
+            </div>
+            <div class="school">
+                <h2>High School</h2>
+                <p>2012<strong class="strong_red"> - </strong>2018</p>
+                <p><a href="http://www.gvid.cz/">Gymnázium Brno, Vídeňská </a></p>
+            </div>
+            <div class="school">
+                <h2>University</h2>
+                <p>2018<strong class="strong_red"> - </strong>2023</p>
+                <p> <a href="https://www.fit.vut.cz/.cs">VUT, Fakulta informačních technologií</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills_section">
+        <div class="content">
+            <h1>Skills</h1>
+            <div class="skill_text">
+                <h2>Programming languages: </h2>
+                <div class="programming_language">
+                    <img src="img/php.png" alt="PHP" class="img1" onmouseover="this.src='img/Lphp.png'" onmouseout="this.src='img/php.png'">
+                    <img src="img/c_sharp.png" alt="C_SHARP" class="img2" onmouseover="this.src='img/Lcsharp.png'" onmouseout="this.src='img/c_sharp.png'">
+                    <br>
+                    <img src="img/python.png" alt="PYTHON" class="img3" onmouseover="this.src='img/Lpython.png'" onmouseout="this.src='img/python.png'">
+                    <img src="img/java_script.png" alt="JAVA_SCRIPT" class="img4" onmouseover="this.src='img/Ljc.png'" onmouseout="this.src='img/java_script.png'">
+                    <img src="img/c.png" alt="C" class="img5" onmouseover="this.src='img/Lc.png'" onmouseout="this.src='img/c.png'">
+                    <br>
+                    <img src="img/java.png" alt="JAVA" class="img6" onmouseover="this.src='img/Ljava.png'" onmouseout="this.src='img/java.png'">
+                    <img src="img/cpp.png" alt="CPP" class="img7" onmouseover="this.src='img/Lcpp.png'" onmouseout="this.src='img/cpp.png'">
+                </div>
+                <div class="tools">
+                    <h2>Tools: </h2>
+                    <img src="img/dotcover.png" alt="DotCover" onmouseover="this.src='img/Tdotcover.png'" onmouseout="this.src='img/dotcover.png'">
+                    <img src="img/datagrip.png" alt="DataGrip" onmouseover="this.src='img/Tdatagrip.png'" onmouseout="this.src='img/datagrip.png'">
+                    <img src="img/intellij.png" alt="IntelliJ" onmouseover="this.src='img/Tintellij.png'" onmouseout="this.src='img/intellij.png'">
+                    <img src="img/phpstorm.png" alt="PHPStorm" onmouseover="this.src='img/Tphpstorm.png'" onmouseout="this.src='img/phpstorm.png'">
+                    <img src="img/pycharm.png" alt="PyCharm" onmouseover="this.src='img/Tpycharm.png'" onmouseout="this.src='img/pycharm.png'">
+                    <img src="img/goland.png" alt="GoLand" onmouseover="this.src='img/Tgoland.png'" onmouseout="this.src='img/goland.png'">
+                    <img src="img/teamcity.png" alt="TeamCity" onmouseover="this.src='img/Tteamcity.png'" onmouseout="this.src='img/teamcity.png'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects_section">
+        <div class="content">
+            <h1>Projects</h1>
+            <a href="#schoolpro">School</a>
+            <a href="#ownpro">Own</a>
+            <h2 id="schoolpro">School Projects :</h2>
+            <div class="project">
+                <h3>Cpp Project</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nisi sed libero molestie mattis sit amet vel nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris sem nibh, maximus a facilisis.</p>
+            </div>
+            <div class="project">
+                <h3>IJC Project</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor cursus tempus. Mauris feugiat sodales ipsum, sed dictum nisl tempus et. Aenean iaculis magna nec justo vestibulum hendrerit. Proin mattis vitae elit sed.</p>
+            </div>
+            <div class="project">
+                <h3>SUR Project</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nisi sed libero molestie mattis sit amet vel nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris sem nibh, maximus a facilisis.</p>
+            </div>
+            <div class="project">
+                <h3>C Project</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor cursus tempus. Mauris feugiat sodales ipsum, sed dictum nisl tempus et. Aenean iaculis magna nec justo vestibulum hendrerit. Proin mattis vitae elit sed.</p>
+            </div>
+            <h2 id="ownpro">Own Projects :</h2>
+            <div class="project">
+                <h3>ICP Project</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur leo tortor. Ut quis purus at lorem porta ultricies. Donec vel tellus tincidunt, ultricies erat in, volutpat eros. In magna eros, interdum sit amet venenatis.</p>
+            </div>
+            <div class="project">
+                <h3>IJA Project</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in malesuada augue, non congue augue. Nulla tincidunt est vitae pellentesque vulputate. Maecenas at tincidunt nisi. Vivamus pellentesque pulvinar ligula, in.</p>
+            </div>
+            <div class="project">
+                <h3>Interpret of IPPcode20</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur leo tortor. Ut quis purus at lorem porta ultricies. Donec vel tellus tincidunt, ultricies erat in, volutpat eros. In magna eros, interdum sit amet venenatis.</p>
+            </div>
+            <div class="project">
+                <h3>IPK Project</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in malesuada augue, non congue augue. Nulla tincidunt est vitae pellentesque vulputate. Maecenas at tincidunt nisi. Vivamus pellentesque pulvinar ligula, in.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <section id="contact_section">
+        <div class="content">
+            <h1>Contact</h1>
+            <div class="block">
+                <img src="img/house.png" alt="HOUSE">
+                <p>Brno, Žebětín, Pod kopcem 1a</p>
+
+            </div>
+            <hr class="hr_1">
+            <div class="block">
+                <img src="img/email.png" alt="EMAIL">
+                <p>xkamen21@stud.fit.vutbr.cz</p>
+            </div>
+            <hr class="hr_2">
+            <div class="block">
+                <img src="img/phone.png" alt="PHONE">
+                <p>+420 775 869 544</p>
+            </div>
+            <hr class="hr_3">
+            <hr class="hr_4">
+            <hr class="hr_5">
+            <hr class="hr_6">
+            <div class="after_block">
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="FACEBOOK"></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="INSTAGRAM"></a>
+                <a href="https://twitter.com/explore"><img src="img/twitter.png" alt="TWITTER"></a>
+                <a href="https://github.com/"><img src="img/github.png" alt="GITHUB"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <p>This page was developed and designed by Daniel Kamenický</p>
+    </section>
+</body>

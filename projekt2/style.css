@@ -1,0 +1,536 @@
+/* Autro: Daniel Kamenický (xkamen21) */
+/* Date: 20. 4. 2020 */
+/* Project: ITW Project 2 */
+
+
+/* Font-Family Righteous */
+@font-face {
+    font-family: 'Muj';
+    src: url('./fonts/Righteous-Regular.ttf');
+}
+
+/* nastaveni usporadani cele stranky */
+body {
+    text-align: center;
+    margin: auto;
+    font-family: "Montserrat";
+    background-color: #8c86867a;
+}
+
+/* rozlozeni celeho obsahu */
+.content{
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* navbar - navigacni menu. stale dostupne */
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 2px;
+    background-color: #ac0808;
+    z-index: 1;
+}
+
+/* ikonka menu, pro mobilni verzi */
+#navbar img{
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    float: left;
+    display: none;
+}
+
+#navbar li{
+    font-family: 'Muj';
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px;
+    letter-spacing: 3px;
+    border: 2px;
+    border-style: solid;
+    color: black;
+    border-radius: 8px 20px 8px 20px
+}
+
+#navbar a:hover{
+    color: red;
+}
+
+.nav {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* sekce s hlavnim obsahem about me, vyska na celou obrazovku */
+#main_section{
+    padding-top: 100px;
+    border-bottom: solid 1px;
+    min-height: 90vh;
+}
+
+/* odkaz na sama sebe */
+#main_section a{
+    text-decoration: none;
+    color: black;
+}
+
+/* flexibilni uvodni obrazek */
+#main_section img{
+    padding-left: 1%;
+    border-radius: 20%;
+    height: 33%;
+    width: 33%;
+    float: left;
+}
+
+/* rozlozeni nadpisu podle dulezitosti */
+#main_section h1{
+    font-size: 30px;
+    letter-spacing: 20px;
+    font-family: 'Muj';
+}
+
+#main_section h3{
+    font-size: 20px;
+    font-family: 'Muj';
+    padding-bottom: 15vh;
+}
+
+.main_content h2{
+    font-family: 'Muj';
+    padding-top: 1%;
+    padding-left: 35%;
+    font-size: 36px;
+    color: #ac0808;
+}
+
+/* zarovnani hlavniho textu */
+#main_section p{
+    padding-top: 3%;
+    line-height: 25px;
+    font-size: 20px;
+    padding-left: 35%;
+}
+
+#main_section .content{
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+
+/* sekce vzdelani, vyska vzdy na celou obrazovku */
+#education_section{
+    min-height: 90vh;
+    padding-top: 10vh;
+    border-bottom: solid 1px;
+}
+
+#education_section h1{
+    padding-bottom: 20vh;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: 'Muj';
+    color: #ac0808;
+}
+
+#education_section h2{
+    font-family: 'Muj';
+}
+
+/* nastaveni objektu se skolami do podobneho stylu jako je menu */
+#education_section .school{
+    margin: auto;
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    border-style: solid;
+    vertical-align: top;
+    border-radius: 40px 40px 40px 40px;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#education_section p{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/* nastaveni odkazu na skoly, pro lepsi citelnost */
+#education_section a{
+    font-weight: lighter;
+    text-decoration: None;
+    color: #ac0808;
+}
+
+#education_section a:hover{
+    color: red;
+}
+
+
+/* sekce se schopnostmi */
+#skills_section{
+    min-height: 90vh;
+    padding-top: 10vh;
+    border-bottom: solid 1px;
+}
+
+#skills_section h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: 'Muj';
+    color: #ac0808;
+}
+
+/* uprava velikosti obrazku, kvuli ruznym rozmerum zdroju */
+.programming_language img{
+    height: 80px;
+    width: 80px;
+    padding: 1%;
+    border: .3rem solid #ac0808;
+    background-color: #ac08085c;
+}
+
+/* uprava stylu do kytice */
+#skills_section .img1{
+    border-radius: 50px 50px 20px 50px;
+}
+
+#skills_section .img2{
+    border-radius: 50px 50px 50px 20px;
+}
+
+#skills_section .img3{
+    border-radius: 50px 20px 20px 50px;
+}
+
+#skills_section .img4{
+    border-radius: 20px 20px 20px 20px;
+}
+
+#skills_section .img5{
+    border-radius: 20px 50px 50px 20px;
+}
+
+#skills_section .img6{
+    border-radius: 50px 20px 50px 50px;
+}
+
+#skills_section .img7{
+    border-radius: 20px 50px 50px 50px;
+}
+
+#skills_section .skill_text{
+    text-align: left;
+    font-family: 'Muj';
+}
+
+/* zarovnani na stred */
+#skills_section .programming_language{
+    text-align: center;
+}
+
+.tools{
+    padding-top: 100px;
+}
+
+/* nastaveni rozsahu obrazku */
+.tools img{
+    height: 80px;
+    width: 80px;
+    padding: 1%;
+}
+
+#skills_section .tools{
+    text-align: center;
+}
+
+/* zarovnani nadpisu na stejnou uroven s obrazky */
+.tools h2{
+    float: left;
+    vertical-align: middle;
+}
+
+#skills_section h2{
+    padding-left: 1%;
+}
+
+/* sekce s projekty */
+#projects_section{
+    min-height: 90vh;
+    padding-top: 10vh;
+    border-bottom: solid 1px;
+}
+
+#projects_section h1{
+    padding-bottom: 2vh;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: 'Muj';
+    color: #ac0808;
+}
+
+/* odkazy na podsekce projektu own a school */
+#projects_section a{
+    margin-bottom: 10vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Muj';
+    font-size: 20px;
+    padding: 7px;
+    border: solid 2px black;
+    border-radius: 20px 20px 20px 20px;
+    color: black;
+}
+
+/* zvyrazneni po prejeti */
+#projects_section a:hover{
+    color: #ac0808;
+    border-color: black;
+}
+
+/* nastaveni bubliny projektu */
+#projects_section .project{
+    background-color: #6d6767;
+    display: inline-block;
+    width: 40%;
+    margin: 2%;
+    color: black;
+    border: solid 2px;
+    border-radius: 10px 40px 10px 40px;
+    vertical-align: top;
+    min-height: 180px;
+}
+
+/* oddelovac nadpisu a textu projektu */
+#projects_section hr{
+    color: #ac0808;
+    width: 80%;
+}
+
+.project h3{
+    font-family: 'Muj';
+}
+
+/* zarovnani textu */
+.project p{
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+/* dostatecne odradkovani podnadpisu */
+#projects_section h2{
+    font-family: 'Muj';
+    text-align: left;
+    padding-left: 1%;
+    padding-top: 70px;
+}
+
+
+/* sekce s kontakty */
+#contact_section{
+    min-height: 85vh;
+    padding-top: 5vh;
+    border-bottom: solid 1px;
+    margin: auto;
+}
+
+#contact_section h1{
+    padding-bottom: 10vh;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: 'Muj';
+    color: #ac0808;
+}
+
+/* nastaveni fixni velikosti obrazku */
+.block img{
+    padding-right: 3%;
+    height: 40px;
+    width: auto;
+}
+
+/* zarovnani jednoho blocku (phone, email ...) */
+#contact_section .block{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+/* pridani stylovych prvku */
+#contact_section .hr_1{
+    color: #ac0808;
+    width: 45%;
+}
+
+#contact_section .hr_2{
+    color: #ac0808;
+    width: 35%;
+}
+
+#contact_section .hr_3{
+    color: #ac0808;
+    width: 25%;
+}
+
+#contact_section .hr_4{
+    color: #ac0808;
+    width: 15%;
+}
+
+#contact_section .hr_5{
+    color: #ac0808;
+    width: 5%;
+}
+
+#contact_section .hr_6{
+    color: #ac0808;
+    width: 1%;
+}
+
+/* nastaveni obrazku insatgram a dale */
+.after_block img{
+    padding-top: 10vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 70px;
+    width: auto;
+}
+
+/* nastaveni zapati stranky */
+#footer{
+    background-color: #605d5d;
+}
+
+#footer p{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Muj';
+    margin: auto;
+}
+
+
+
+/* uprava detailnich prvku */
+.strong_red{
+    color: #ac0808;
+}
+
+
+/* verze pro mobily, standardne se udava mensi sirka */
+/* danou sirku jsme zvolil i pro mobilni verzi pri pretoceni mobilu na sirku */
+@media only screen and (max-width: 800px){
+
+    /* zobrazeni obrazku menu */
+    #navbar img{
+        display:flex;
+    }
+
+    /* odebrani prvku pro velkou obrazovku */
+    #navbar ul.nav {
+        display: none;
+    }
+
+    #navbar ul.nav.TgCls{
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* upraveni navigacniho menu pro mobilni verzi */
+    #navbar {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        border-bottom: solid 2px;
+        background-color: #ac0808;
+        z-index: 1;
+    }
+
+    /* zarovnani menu pod sebe */
+    #navbar li{
+        margin: 0 0 0 0;
+        display: block;
+        clear:right;
+        float:right;
+        width: 100%;
+        background-color: #ac0808;
+        border: solid 1px;
+        border-color:  black;
+    }
+
+    #navbar a{
+        display: block;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border: 0px;
+        border-style: None;
+    }
+
+    /* zobrazeni obrazku na stred a zvetseni pro mobilni verzi */
+    #main_section img{
+        width: 70%;
+        height: auto;
+        float: none;
+    }
+
+    /* upraveni odradkovani fotky od nadpisu */
+    #main_section h3{
+        padding-bottom: 5vh;
+    }
+
+    /* upraveni textu hlavni sekce */
+    .main_content h2{
+        padding-left: 0%;
+    }
+
+    #main_section p{
+        padding-left: 0%;
+        max-width: 70%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    /* upraveni sekce skills pro mobilni verzi */
+    #skills_section .tools{
+        padding-top: 50px;
+        max-width: 70%;
+        min-width: 400px;
+        margin: auto;
+    }
+
+    /* zarovnani nadpisu skill sekce na stred */
+    #skills_section h2{
+        float: none;
+        text-align: center;
+    }
+
+    /* zarovnani textu projektu pro lepsi citelnost na stred */
+    .project p{
+        text-align: center;
+    }
+
+    /* zarovnani nadpisu projektu pro lepsi design */
+    #projects_section h2{
+        text-align: center;
+    }
+}
